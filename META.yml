@@ -1,27 +1,26 @@
---- #YAML:1.0
-name:               DBIx-Class-Result-Validation
-version:            0.04
-abstract:           ~
+---
+abstract: 'DBIx Class Result Validation'
 author:
-    - Nicolas Oudard <nicolas@oudard.org>
-license:            perl
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
+  - 'Nicolas Oudard'
 build_requires:
-    ExtUtils::MakeMaker:  0
-requires:
-    Carp::Clan:           0
-    Class::Accessor::Grouped:  0.09008
-    DBIx::Class:          0.08123
-    namespace::clean:     0
-    Test::More:           0
-    Try::Tiny:            0
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.55_02
+  Test::More: 0
+configure_requires:
+  Module::Build: 0.36
+generated_by: 'Module::Build version 0.3603'
+license: perl
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: DBIx-Class-Result-Validation
+provides:
+  DBIx::Class::Result::Validation:
+    file: lib/DBIx/Class/Result/Validation.pm
+    version: 0.05
+requires:
+  Class::Accessor::Grouped: 0.09008
+  DBIx::Class: 0.08127
+  SQL::Translator: 0.11007
+  Test::More: 0
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.05
